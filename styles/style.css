@@ -243,6 +243,7 @@ nav ul .about {
 /* habit section  */
 
 .habit {
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -271,8 +272,8 @@ nav ul .about {
 .habit-card-container {
     margin: 0 auto;
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    /* gap: 40px; */
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -312,12 +313,13 @@ nav ul .about {
 
 /* run section  */
 .run {
+    width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1050px;
-    gap: 130px;
+    /* max-width: 80%; */
+    /* gap: 130px; */
     border-radius: 18px;
     padding: 30px 0px;
 
@@ -326,6 +328,7 @@ nav ul .about {
 }
 .run-text {
     max-width: 407px;
+    padding-left: 54px;
 }
 
 .run .run-text h1 {
@@ -347,16 +350,18 @@ nav ul .about {
 }
 
 .run-img {
-    width: 366px;
-    height: 312px;
-    /* padding: 20px 0px; */
-    background-image: url(../images/run.jpg);
+    width: 40%;
+    height: 370px;
+    margin-right: 32px;
+}
+
+.run-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 70% 30%;
     border-radius: 18px;
-    background-repeat: no-repeat;
-    background-position: -768px -206px;
-    padding: 0px 10px;
-    padding-top: 58px;
-    margin-left: 50px;
+
 }
 
 /* bmi section  */
@@ -388,8 +393,12 @@ nav ul .about {
     background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 175px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.bmi-chart{
+    margin-left: 180px;
 }
 
 .bmi-chart h3 {
@@ -400,7 +409,9 @@ nav ul .about {
 }
 
 .bmi-calculator {
+    width: 50%;
     margin-top: 58px;
+    margin-right: 180px;
 }
 
 .bmi-calculator h3 {
@@ -429,9 +440,7 @@ nav ul .about {
     padding: 13px 18px;
 }
 
-.bmi-calculator {
-    width: 577px;
-}
+
 
 .bmi-calculator p {
     color: rgba(255, 255, 255, 0.5);
@@ -512,7 +521,7 @@ select {
 }
 
 .team-card-container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 78px;
     display: grid;
@@ -525,6 +534,8 @@ select {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .tranier1 {
     background: url(../images/trainer1.png), rgba(119, 119, 119, 0.2);
@@ -729,6 +740,8 @@ footer .started1 ul li {
 
     .habit-card-container {
         flex-direction: column;
+        justify-content: center;
+        gap: 40px;
     }
 
     header {
@@ -739,7 +752,7 @@ footer .started1 ul li {
     .run {
         flex-direction: column;
         gap: 31px;
-        max-width: 90vw;
+        max-width: 90%;
     }
 
     .run-text {
@@ -748,6 +761,8 @@ footer .started1 ul li {
         text-align: left;
         padding-left: 0px;
     }
+
+  
 
     .run .run-title {
         font-size: 2.2rem !important;
@@ -758,11 +773,13 @@ footer .started1 ul li {
     }
 
     .run-img {
-        width: 275px;
-        margin-left: 0px !important;
-        height: 100px;
-        background-size: 120%;
-        background-position: top left;
+        width: 90%;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    .run-img img{
+        object-fit: contain;
     }
 
     /* bmi section  */
@@ -785,11 +802,13 @@ footer .started1 ul li {
     .bmi-chart {
         margin-bottom: 32px;
         margin-top: 34px;
+        margin-left: 0px;
     }
 
     .bmi-calculator {
         width: 350px;
         margin-top: 0px;
+        margin-right: 0px;
     }
 
     .bmi-chart h3 {
